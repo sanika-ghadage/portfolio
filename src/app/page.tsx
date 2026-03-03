@@ -3,7 +3,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const AnimatedCounter = ({ target, duration = 2000 }) => {
+type AnimatedCounterProps = {
+  target: number;
+  duration?: number;
+};
+
+const AnimatedCounter = ({ target, duration = 2000 }: AnimatedCounterProps) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -217,7 +222,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: "🌱", title: "Plant Disease Detection", desc: "AI model using TensorFlow & OpenCV to detect plant diseases from images", tech: ["TensorFlow", "Python", "OpenCV"], link: "https://github.com/sanika-ghadage/plant-disease-detection" },
+              { icon: "🌱", title: "Plant Disease Detection", desc: "AI model using TensorFlow & OpenCV to detect plant diseases from images", tech: ["TensorFlow", "Python", "OpenCV"], link: "https://github.com/sanika-ghadage/PlantAi" },
               { icon: "🎵", title: "Beatzy Music Streamer", desc: "Full-stack music platform with real-time playback and playlist management", tech: ["Next.js", "Supabase", "TypeScript"], link: "https://github.com/sanika-ghadage/beatzy" },
               { icon: "🎓", title: "Smart AI Classroom", desc: "Intelligent classroom automation using AI for enhanced learning experience", tech: ["Python", "AI/ML", "Computer Vision"], link: "https://github.com/sanika-ghadage/ai-smart-classroom" },
               { icon: "🍕", title: "Food Website", desc: "Responsive restaurant website with modern UI/UX design and interactions", tech: ["HTML5", "CSS3", "JavaScript"], link: "https://github.com/sanika-ghadage/food-website" },
