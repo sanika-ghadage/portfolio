@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Portfolio Customization
+
+1. Replace `public/profile.jpg` with your own profile photo.
+2. Update text, skills, and projects in `src/app/page.tsx`.
+3. Add live project links and screenshots where applicable.
+4. Deploy using `npx vercel --prod` or connect this repo to Vercel/Netlify.
+
+This portfolio is designed to help you showcase your hackathon-ready profile with clean sections and quick links to GitHub and LinkedIn.
+
+### Extra Features
+
+- **Theme toggle:** use the moon/sun button in the header to switch between light and dark mode. Preference is remembered.
+- **Styling tweaks:** change gradients, badge colors, or card shadows by editing `app/page.tsx` and `globals.css`.
+- Add project screenshots or GIFs inside the project cards for more visual appeal.
